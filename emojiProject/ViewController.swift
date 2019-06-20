@@ -10,8 +10,10 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let emojis = ["🍋": "sour but a great addition", "🥑" : "sorry, but basic", "🍍" : "hard to first break down, but sweet on the inside", "🍓" : "classically sweet", "🍉" : "summertimes' favorite", "🍎" : "a true classic fruit"]
     
     @IBAction func showMessage(sender: UIButton) {
+        let selectedEmotion = sender.titleLabel?.text
         let alertController = UIAlertController(title: "Based on the fruit lemon...", message: "You are sour but make many things better!", preferredStyle: UIAlertController.Style.alert)
         alertController.addAction(UIAlertAction(title: "ok", style: UIAlertAction.Style.default, handler: nil))
         
